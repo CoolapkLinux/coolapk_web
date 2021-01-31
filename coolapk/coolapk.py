@@ -13,10 +13,6 @@ def main():
     main_json = main_page(session["firstItem"])
     print(main_json)
 
-    if not session["firstItem"] == 0:
-        if session["firstItem"] == main_json[-1]["id"]:
-            return render_template("index.html", data=main_json, nomore=True)
-
     session["firstItem"] = main_json[-1]["id"]
 
     return render_template("index.html",data=main_json)
