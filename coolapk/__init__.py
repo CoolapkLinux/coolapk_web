@@ -12,5 +12,6 @@ def create_app() -> Flask:
     )
 
     app.register_blueprint(bp)
+    app.add_url_rule("/", endpoint="index")
 
     return app
