@@ -1,7 +1,7 @@
 import * as Base64 from 'base-64'
 import md5 from 'md5'
 
-function get_token() {
+export function get_token() {
 	var DEVICE_ID = "8513efac-09ea-3709-b214-95b366f1a185"
 
 	var t = Date.now()
